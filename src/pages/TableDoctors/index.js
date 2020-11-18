@@ -14,8 +14,8 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, age, specialty, clinic, adress) {
+  return { name, age, specialty, clinic, adress };
 }
 
 const rows = [
@@ -44,10 +44,10 @@ export default function BasicTable() {
               <TableCell component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="center">{row.calories}</TableCell>
-              <TableCell align="center">{row.fat}</TableCell>
-              <TableCell align="center">{row.carbs}</TableCell>
-              <TableCell align="center">{row.protein}</TableCell>
+              <TableCell align="center">{row.age}</TableCell>
+              <TableCell align="center">{row.specialty}</TableCell>
+              <TableCell align="center">{row.clinic}</TableCell>
+              <TableCell align="center">{row.adress}</TableCell>
             </TableRow>
           ))}
         </TableBody>
